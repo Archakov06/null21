@@ -4,19 +4,20 @@ session_start();
 ob_start();
 
 $_PWDS = [
-    'molodec',
-    '1984',
-    '1307100',
-    '097d6e4115718a',
-    'enigma',
+    -1 => '',
+    0 => 'molodec',
+    1 => '1984',
+    2 => '1307100',
+    3 => '097d6e4115718a',
+    4 => 'enigma',
 ];
 
-// $_SESSION['step'] = 0;
+$_SESSION['step'] = -1;
 
 $error = false;
 $step = $_SESSION['step'];
 if (empty($step)) {
-    $step = $_SESSION['step'] = 0;
+    $step = $_SESSION['step'] = -1;
 }
 
 if (isset($_POST['pwd'])) {
