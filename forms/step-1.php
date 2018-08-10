@@ -15,7 +15,7 @@
         <li>будь внимателен</b></li>
     </ul>
     <form method="POSt" action="">
-        <input name="pwd" type="text">
+        <input name="pwd" placeholder="А вдруг без текста?" type="text" value="Да">
         <button type="submit">Начать?</button>
     </form>
 </body>
