@@ -12,7 +12,7 @@ $_PWDS = [
     4 => 'enigma',
 ];
 
-$_SESSION['step'] = -1;
+// $_SESSION['step'] = -1;
 
 $error = false;
 $step = $_SESSION['step'];
