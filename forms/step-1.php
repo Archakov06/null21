@@ -16,7 +16,7 @@
     </ul>
     <form method="POSt" action="">
         <input name="pwd" type="text">
-        <button type="submit">Начать</button>
+        <button type="submit">Начать?</button>
     </form>
 </body>
 </html>
