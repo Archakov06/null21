@@ -29,7 +29,7 @@ if ($started && isset($_POST['pwd'])) {
     }
 }
 
-var_dump($step, $_SESSION);
+// var_dump($step, $_SESSION);
 
 if ($started) {
     include "./forms/step_{$step}.php";
