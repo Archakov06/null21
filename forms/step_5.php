@@ -17,11 +17,10 @@
     </form>
     <p>Итак! Это последняя задача. Тут тебе надо знать чуть больше о криптографии.</p>
     <!-- Не ищи ответа там, где его нет. -->
-    <!-- Но держи подсказку -->
     <!-- bfsh-ecb-b64 -->
     <!-- a256 -->
     <!-- md5 -->
-    <p>9e329b76e706254f49b17f149866aa78</p>
+    <p>umDyftLovFzzuEKYD8byVv/zhxMFf9sZ7SQR7b/IPNN0m64uN8NMEGOILJ1u/ZVH</p>
     <p>concat-firstkey-and-lastkey-and-sendme</p>
     <? $error ? print($error) : ''; ?>
 </body>

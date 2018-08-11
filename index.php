@@ -4,7 +4,6 @@ session_start();
 ob_start();
 
 $_PWDS = [
-    -1 => '',
     0 => 'molodec',
     1 => '1984',
     2 => '1307100',
@@ -12,16 +11,15 @@ $_PWDS = [
     4 => 'enigma',
 ];
 
-// $_SESSION['step'] = -1;
+$step = 0;
+$started = intval($started) >= 1;
 
-$error = false;
-$step = $_SESSION['step'];
-if (empty($step)) {
-    $step = $_SESSION['step'] = -1;
+if (isset($_POST['password']) && $_POST['password'] === '') {
+    $step = $_SESSION['step'] = 0;
+    $started = true;
 }
 
-if (isset($_POST['pwd'])) {
-
+if ($started && isset($_POST['pwd'])) {
     if ($_POST['pwd'] == $_PWDS[$step]) {
         $step++;
         $_SESSION['step'] = $step;
@@ -29,7 +27,12 @@ if (isset($_POST['pwd'])) {
     } else {
         $error = '<span style="color: red">Неверно :(</span>';
     }
-
 }
 
-include "./forms/step{$step}.php";
+var_dump($step, $_SESSION);
+
+if ($started) {
+    include "./forms/step_{$step}.php";
+} else {
+    include "./forms/welcome.php";
+}
