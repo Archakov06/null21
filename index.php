@@ -4,18 +4,26 @@ session_start();
 ob_start();
 
 $_PWDS = [
-    0 => 'molodec',
-    1 => '1984',
-    2 => '1307100',
-    3 => '097d6e4115718a',
-    4 => 'enigma',
+    0 => '',
+    1 => 'molodec',
+    2 => '1984',
+    3 => '1307100',
+    4 => '097d6e4115718a',
+    5 => 'enigma',
+    6 => '097d6e4115718a073d9e1421451cae9e'
 ];
 
+// $_SESSION['step'] = null;
+
 $step = 0;
-$started = intval($started) >= 1;
+$started = !empty($_SESSION['step']);
+
+if (!empty($_SESSION['step'])) {
+    $step = $_SESSION['step'];
+}
 
 if (isset($_POST['password']) && $_POST['password'] === '') {
-    $step = $_SESSION['step'] = 0;
+    $step = $_SESSION['step'] = 1;
     $started = true;
 }
 
@@ -29,7 +37,9 @@ if ($started && isset($_POST['pwd'])) {
     }
 }
 
-// var_dump($step, $_SESSION);
+// var_dump($step, $started, $_SESSION['step']);
+
+// include "./forms/step_{$step}.php";
 
 if ($started) {
     include "./forms/step_{$step}.php";

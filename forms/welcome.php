@@ -8,6 +8,15 @@
     </style>
 </head>
 <body>
-    <p>Wait...</p>
+    <p>Добро пожаловать!</p>
+    <p>Перед тем, как ты начнёшь выполнять этот квест, я тебе дам одну подсказку и один совет.</p>
+    <ul style="list-style: none">
+        <li>ключ от всех дверей - <b>null21</b></li>
+        <li>будь очень внимателен</b></li>
+    </ul>
+    <form method="POST" action="">
+        <input name="password" placeholder="А вдруг без текста?" type="text" value="Да">
+        <button type="submit">Начать?</button>
+    </form>
 </body>
 </html>
