@@ -11,6 +11,6 @@
     <br>
     <img src="/assets/udidit.gif">
     <p>Поздравляю! Ты справился с квестом.</p>
-    <p>Для того, чтобы получить свой приз пришли в Telegram — @archakov06 — "8e7f49bf91e0ff4b539fb3ec0a35389a"</p>
+    <p>Для того, чтобы получить свой приз пришли в Telegram — @archakov06 — "3b6a0b81dd1d3c351208c9e991c6ce92"</p>
 </body>
 </html> 
