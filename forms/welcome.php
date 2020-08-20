@@ -15,7 +15,7 @@
         <li>будь очень внимателен</b></li>
     </ul>
     <form method="POST" action="">
-        <input name="password" placeholder="А вдруг без текста?" type="text" value="Да">
+        <input name="password" placeholder="А пробовал без?" type="text" value="Да">
         <button type="submit">Начать?</button>
     </form>
 </body>
